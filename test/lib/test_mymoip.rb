@@ -65,7 +65,7 @@ class TestMymoip < Test::Unit::TestCase
 
   def test_choose_right_api_url_by_production_environment
     MyMoip.environment = "production"
-    assert_equal "https://www.moip.com.br", MyMoip.api_url
+    assert_equal "https://api.moip.com.br", MyMoip.api_url
   end
 
   def test_logger_initialization
